@@ -1,5 +1,6 @@
 @import "settings";
 @import "foundation";
+@import "compass/css3/box-shadow";
 
 // Or selectively include components
 // @import
@@ -38,3 +39,64 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+// TOP BAR
+.top-bar {
+  @include box-shadow(0 2px 5px rgba(0,0,0,.26));
+}
+
+// HEADER
+
+#header {
+  background: #009688 url(../images/TransportShip05.jpg) center center no-repeat;
+  background-size: cover;
+
+  .portrait-photo {
+    margin: 50px auto 0;
+    position: absolute;
+    left: 50%;
+    margin-left: -70px;
+    z-index: 1;
+    border-radius: 100px;
+    border: 6px solid #fff;
+  }
+
+  .header-inner {
+    padding: 210px 0 30px;
+    text-align: center;
+    color: $jet;
+    opacity: 0.8;
+    background: #fff;
+  }
+
+  .name {
+    font-size: 2em;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+
+  .title {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .subtitle {
+    font-size: 1em;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+
+  .email, .mobile, .address {
+  }
+
+  .email a {
+    color: $jet;
+  }
+}
+
+// PROFILE
+.intro {
+  padding-bottom: 30px;
+}

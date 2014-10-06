@@ -7,111 +7,136 @@
     <link rel="stylesheet" href="css/app.css" />
     <script src="bower_components/modernizr/modernizr.js"></script>
   </head>
+
   <body>
 
-    <div class="off-canvas-wrap" data-offcanvas>
-      <div class="inner-wrap">
-
-        <nav class="tab-bar fixed">
-          <div class="left-small">
-            <a role="button" aria-expanded="false" aria-controls="idOfLeftMenu" class="left-off-canvas-toggle menu-icon" href="#"><span></span></a>
-          </div>
-
-          <section class="middle tab-bar-section">
-            <h1 class="title">Elango Kasi</h1>
-          </section>
-        </nav>
-        <!-- Off canvas navigation -->
-        <nav class="left-off-canvas-menu">
-          <ul class="off-canvas-list">
-            <li><label>Elango Kasi</label></li>
-            <li><a href="#lawyer-profile">Lawyer Profile</a></li>
-            <li><a href="#legal-services">Legal Services</a></li>
-            <li><a href="#testimonials">Testimonials</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </nav>
-
-        <!-- Header -->
-        <header id="header">
-          <img class="portrait-photo" src="images/elangokasi-profilephoto.jpg">
-          <div>Elango Kasi</div>
-          <div>Maritime Lawyer</div>
-          <div class="email">elango.kasi@sealawyer.com.au</div>
-          <div class="mobile">+61 437 616 666</div>
-          <div class="address">Sydney, NSW</div>
-        </header>
-        <!-- End of header -->
-
-        <!-- Main content -->
-        <section class="main-content">
-          <!-- Lawyer Profile -->
-          <section id="lawyer-profile">
-            <h1>Lawyer Profile</h1>
-            <div>Maritime Lawyer <em>Master mariner</em></div>
-            <div>30 years of experience: </div>
-            <div>Specialise in: </div>
-          </section>
-          <!-- End of Lawyer Profile -->
-
-          <!-- Services -->
-          <section id="legal-service">
-            <h1>Legal Services</h1>
-
-            <div>Admiralty claim</div>
-            <div>Arbitration &amp; mediation</div>
-            <div>Bills of lading</div>
-            <div>Marine &amp; Personal Insurance</div>
-            <div>Rule of the road</div>
-
-          </section>
-          <!-- End of Services -->
-
-          <!-- Testimonials -->
-          <section id="testimonials">
-            <h1>Testimonials</h1>
-            <div class="testimonials">
-              <quote>Testimonials 1 - lorem ipsum</quote>
-              <p>- Mr. Someone </p>
-            </div>
-            <div class="testimonials">
-              <quote>Testimonials 1 - lorem ipsum</quote>
-              <p>- Mr. Someone </p>
-            </div>
-            <div class="testimonials">
-              <quote>Testimonials 1 - lorem ipsum</quote>
-              <p>- Mr. Someone </p>
-            </div>
-            <div class="testimonials">
-              <quote>Testimonials 1 - lorem ipsum</quote>
-              <p>- Mr. Someone </p>
-            </div>
-          </section>
-          <!-- End of Testimonials -->
-
-          <!-- Contact details -->
-          <section id="contact">
-            <h1>Contact details</h1>
-            <div>Elango Kasi - <em>Maritime Lawyer</em></div>
-            <div class="email">elango.kasi@sealawyer.com.au</div>
-            <div class="mobile">+61 437 616 666</div>
-            <div class="address">Sydney, NSW</div>
-          </section>
-          <!-- End of contact -->
+    <div class="row sticky">
+      <!-- Fixed top navigation bar-->
+      <nav class="top-bar" data-topbar role="navigation">
+        <ul class="title-area">
+          <li class="name"><h1><a href="#">Elango Kasi</a></h1></li>
+          <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+          <li class="toggle-topbar menu-icon"><a href="#"><span></span></a></li>
+        </ul>
+        <section class="top-bar-section">
+        <ul class="right">
+          <li><a href="#lawyer-profile">Lawyer Profile</a></li>
+          <li><a href="#legal-services">Legal Services</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
         </section>
-        <!-- End of main content -->
-
-        <footer>
-          <div class="copyright">Copyright &copyright; 2014 SeaLawyer</div>
-          <ul class="social-links">
-            <li><a href="http://au.linkedin.com/pub/elango-kasi/26/a06/67" target="_blank">Linkedin</a></li>
-            <li><a href="https://www.facebook.com/elango.kasi" target="_blank">Facebook</a></li>
-          </ul>
-        </footer>
-        <!-- Close the off-canvas menu -->
-        <a class="exit-off-canvas"></a>
-      </div>
+      </nav>
     </div>
+
+    <!-- Header -->
+    <header id="header">
+      <img class="portrait-photo" src="images/elangokasi-profilephoto.jpg">
+      <div class="header-inner">
+        <div class="name">Elango Kasi</div>
+        <div class="title">Maritime Lawyer</div>
+        <div class="subtitle">Master mariner</div>
+         <div class="company">PB Lawyers</div>
+        <div class="email"><a href="mailto:elango.kasi@sealawyer.com.au">elango.kasi@sealawyer.com.au</a></div>
+        <div class="mobile">+61 437 616 666</div>
+        <div class="address">Sydney, NSW</div>
+      </div>
+    </header>
+    <!-- End of header -->
+
+    <!-- Main content -->
+    <section class="main-content">
+      <!-- Lawyer Profile -->
+      <section id="lawyer-profile">
+        <h1>Lawyer Profile</h1>
+        <div class="intro">Being in the maritime industry for 30 years combine with being as a solicitor/lawyer since 2011 gives the clients enormous business edge from around the world. </div>
+        <ul class="history">
+          <li>Serving on container ship, tanker ship, bulk carrier, cargo ship and passenger ship.</li>
+          <li>Marine Surveyor/Superintendent</li>
+          <li>Container planner</li>
+          <li>Compass Adjuster</li>
+          <li>Teacher of Maritime Study</li>
+          <li>Teacher of Contract and Marine Insurance</li>
+        </ul>
+        <div>Qualifications:</div>
+        <ul>
+        <li>LLB James Cook University, Queensland</li>
+        <li>Graduate diploma in Legal practice 2011, Sydney</li>
+        <li>Teacher of Maritime and Contract Law in State of New South Wales</li>
+        <li>Master Mariner</li>
+        <li>Courts attending:
+          <ul>
+            <li>Federal Court of Australia</li>
+            <li>District Court of NSW</li>
+            <li>Supreme Court of NSW</li>
+          </ul>
+        </li>
+        </ul>
+      </section>
+      <!-- End of Lawyer Profile -->
+
+      <!-- Services -->
+      <section id="legal-service">
+        <h1>Legal Services</h1>
+
+        <div>Admiralty claim</div>
+        <div>Arbitration &amp; mediation</div>
+        <div>Bills of lading</div>
+        <div>Marine &amp; Personal Insurance</div>
+        <div>Rule of the road</div>
+        <div>And also</div>
+        <ul>
+          <li>Family Law</li>
+          <li>Conveyancing</li>
+          <li>Criminal Law</li>
+          <li>Police Matters</li>
+          <li>Torts, Contracts</li>
+          <li>Power of Attorneys</li>
+          <li>Wills &amp; Probates and Administration</li>
+          <li>Victim Compensation Claims</li>
+        </ul>
+        <div>Immigration Law</div>
+      </section>
+      <!-- End of Services -->
+
+      <!-- Testimonials -->
+      <section id="testimonials">
+        <h1>Testimonials</h1>
+        <div class="testimonials">
+          <quote>We found Mr. Kasi to be proficient in the areas of Law covered by this firm. He was punctual and able to work diligently and unsupervised.</quote>
+          <p>Stella Papantoniou - Papantoniou Blake Lawyers. </p>
+        </div>
+        <div class="testimonials">
+          <quote>Mr.Kasi was always punctual and courteous both to other members of the firm and to clients.</quote>
+          <p>Beverley Boyle - D.M. Roberts &amp; Co. </p>
+        </div>
+        <div class="testimonials">
+          <quote>Elango is a solicitor who readily volunteered his services to us to assist the mainly poor and ethnically diverse residents of Toongabbie NSW and the surrounding area. This he did in a professional manner and with good humour. He assisted with a wide range of matters that reflected the diversity of our clientele. Elango commenced with us as a pro-bono Solicitor in August 2011 till he left to take up a position in Pert.</quote>
+          <p>Michael Doyle - Toongabbie Legal Centre </p>
+        </div>
+      </section>
+      <!-- End of Testimonials -->
+
+      <!-- Contact details -->
+      <section id="contact">
+        <h1>Contact details</h1>
+        <div>Elango Kasi - <em>PB Lawyers</em></div>
+        <div class="email"><a href="mailto:legal@pblawyers.net.au">legal@pblawyers.net.au</a></div>
+        <div class="mobile">+61 437 616 666</div>
+        <div class="address">28 Aurelia Street, Toongabbie NSW 2146</div>
+      </section>
+      <!-- End of contact -->
+    </section>
+    <!-- End of main content -->
+
+    <footer>
+      <div class="copyright">Copyright &copy; 2014 SeaLawyer</div>
+      <ul class="social-links">
+        <li><a href="http://au.linkedin.com/pub/elango-kasi/26/a06/67" target="_blank">Linkedin</a></li>
+        <li><a href="https://www.facebook.com/elango.kasi" target="_blank">Facebook</a></li>
+      </ul>
+    </footer>
+
+
     <script src="bower_components/jquery/dist/jquery.js"></script>
     <script src="bower_components/foundation/js/foundation.min.js"></script>
     <script src="js/app.js"></script>
