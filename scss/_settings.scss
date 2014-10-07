@@ -129,6 +129,7 @@ $black       : #000000;
 // We use these to control various global styles
 $body-bg: $white;
 $body-font-color: $jet;
+$body-secondary-font-color: #747474;
 $body-font-family: $font-family-sans-serif;
 $body-font-weight: $font-weight-normal;
 $body-font-style: normal;
@@ -208,10 +209,10 @@ $header-bottom-margin: .5rem;
 $header-text-rendering: optimizeLegibility;
 
 // We use these to control header font sizes
-$h1-font-size: rem-calc(44);
-$h2-font-size: rem-calc(37);
-$h3-font-size: rem-calc(27);
-$h4-font-size: rem-calc(23);
+$h1-font-size: rem-calc(40);
+$h2-font-size: rem-calc(33);
+$h3-font-size: rem-calc(25);
+$h4-font-size: rem-calc(20);
 $h5-font-size: rem-calc(18);
 $h6-font-size: 1rem;
 
