@@ -1,5 +1,8 @@
 @import "settings";
 @import "foundation";
+@import "compass/css3/box-shadow";
+@import "compass/css3/border-radius";
+@import "compass/css3/background-size";
 
 // Or selectively include components
 // @import
@@ -38,3 +41,267 @@
 //   "foundation/components/type",
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
+
+// TOP NAV BAR
+div.sticky {
+  background-color: $topbar-bg-color;
+  @include box-shadow(0 2px 5px rgba(0,0,0,.26));
+}
+
+// HEADER
+#header {
+  background: #009688 url(../images/TransportShip05.jpg) center center no-repeat;
+  background-size: cover;
+  border-bottom: 3px solid $primary-color;
+
+  .portrait-photo {
+    margin: 0 0 30px 0;
+    border-radius: 100px;
+    border: 6px solid $primary-color;
+  }
+
+  .header-inner {
+    text-align: center;
+    color: $jet;
+    background: rgba(#ffffff, 0.8);
+
+    .row {
+      padding: 60px 0 30px 0;
+    }
+  }
+
+  .name {
+    font-size: 2em;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+
+  .title {
+    font-size: 1.3em;
+    font-weight: bold;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+  }
+
+  .subtitle {
+    font-size: 1em;
+    font-weight: bold;
+    padding-bottom: 20px;
+  }
+
+  .company, .email a, .mobile, .address {
+    color: $jet;
+    font-style: italic;
+  }
+}
+
+// UTILITIES
+.imageframe-shadow-right,
+.imageframe-shadow-left {
+  height: 22px;
+  width: 230px;
+  display: inline-block;
+  position: absolute;
+}
+
+.sep-shadow {
+  background: transparent url(../images/sep-shadow.png) no-repeat top center;
+  height: 7px;
+  width: 100%;
+}
+
+.sep-dashed {
+  border-bottom: 2px dashed #e7e6e6;
+}
+
+ul.list-icon-check {
+  list-style: none;
+  font-size: 14px;
+  color: $body-secondary-font-color;
+
+  li {
+    line-height: 18px;
+    margin-bottom: 15px;
+    padding-left: 25px;
+
+    &:before {
+      color: #747474 !important;
+      content: '\f046';
+      font-family: FontAwesome;
+      margin-left: -25px;
+      display: inline-block;
+      height: 18px;
+      width: 18px;
+      float: left;
+    }
+  }
+}
+
+.shadow-box {
+  position: relative;
+  &:before, &:after
+  {
+    z-index: -1;
+    position: absolute;
+    content: "";
+    bottom: 15px;
+    left: 10px;
+    width: 50%;
+    top: 80%;
+    max-width:300px;
+    background: #777;
+    -webkit-box-shadow: 0 15px 10px #777;
+    -moz-box-shadow: 0 15px 10px #777;
+    box-shadow: 0 15px 10px #777;
+    -webkit-transform: rotate(-3deg);
+    -moz-transform: rotate(-3deg);
+    -o-transform: rotate(-3deg);
+    -ms-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+  }
+  &::after
+  {
+    -webkit-transform: rotate(3deg);
+    -moz-transform: rotate(3deg);
+    -o-transform: rotate(3deg);
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+    right: 10px;
+    left: auto;
+  }
+}
+
+.main-content {
+  h1 {
+    text-align: center;
+    margin: 20px 0 5px;
+  }
+
+  .main-section {
+    padding: 60px 0;
+
+    .intro {
+      margin: 25px auto;
+      text-align: center;
+      color: $body-secondary-font-color;
+    }
+
+    .sep-shadow, .sep-dashed {
+      margin-bottom: 40px;
+    }
+  }
+
+}
+
+// PROFILE
+#lawyer-profile {
+  .sep-shadow {
+    margin-bottom: 60px;
+  }
+}
+
+.content-box {
+  padding: 15px 5px 30px;
+  background: #f8f8f8;
+
+  .heading-and-icon {
+    overflow: visible;
+    position: relative;
+    margin: 34px 0 15px;
+  }
+
+  .fa {
+    position: absolute;
+    top: -80px;
+    left: 50%;
+    margin-left: -32px;
+    width: 64px;
+    height: 64px;
+    line-height: 64px;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    background-color: $primary-color;
+
+    @include border-radius(75px);
+
+    visibility: visible;
+    -webkit-animation: 0.8s;
+  }
+
+  h2 {
+    text-transform: capitalize;
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+  }
+}
+
+// SERVICES
+#legal-services {
+  background-color: #f8f8f8;
+
+  .th {
+    margin-bottom: 20px;
+  }
+}
+
+// TESTIMONIALS
+#testimonials {
+  background-color: #F2EEEA;
+}
+
+// CONTACT
+#contact {
+  padding-top: 0;
+  background-color: #363839;
+
+
+  .map {
+    border-bottom: 3px solid $primary-color;
+  }
+
+  h5 {
+    padding-top: 20px;
+    color: white;
+
+    .subheader {
+      color: white;
+    }
+  }
+
+  .contact-details {
+    padding-top: 25px;
+    color: white;
+
+    a {
+      color: white;
+    }
+  }
+}
+
+.social-links {
+  i {
+    @include border-radius(25px);
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    font-size: 18px;
+    margin: 10px 0;
+    background-color: $primary-color;
+    text-align: center;
+  }
+}
+
+// FOOTER
+footer {
+  background-color: #282a2b;
+  color: white;
+  font-size: 13px;
+
+  .copyright {
+    padding: 30px 0;
+    text-align: center;
+
+  }
+}
