@@ -42,6 +42,12 @@
 //   "foundation/components/offcanvas",
 //   "foundation/components/visibility";
 
+h1, h2, h3, h4, h5 {
+  strong {
+    font-weight: 500;
+  }
+}
+
 // TOP NAV BAR
 div.sticky {
   background-color: $topbar-bg-color;
@@ -55,7 +61,7 @@ div.sticky {
   border-bottom: 3px solid $primary-color;
 
   .portrait-photo {
-    margin: 0 0 30px 0;
+    margin: 0 0 20px 0;
     border-radius: 100px;
     border: 6px solid $primary-color;
   }
@@ -64,6 +70,7 @@ div.sticky {
     text-align: center;
     color: $jet;
     background: rgba(#ffffff, 0.8);
+    font-family: $font-family-sans-serif;
 
     .row {
       padding: 60px 0 30px 0;
@@ -72,26 +79,27 @@ div.sticky {
 
   .name {
     font-size: 2em;
+    letter-spacing: 0.2em;
     text-transform: uppercase;
-    padding-bottom: 10px;
+    margin-bottom: 20px;
   }
 
   .title {
     font-size: 1.3em;
-    font-weight: bold;
-    padding-bottom: 10px;
+    padding-bottom: 0px;
     text-transform: uppercase;
+    color: $oil;
   }
 
   .subtitle {
     font-size: 1em;
-    font-weight: bold;
-    padding-bottom: 20px;
+    padding-bottom: 15px;
+    color: $oil;
   }
 
   .company, .email a, .mobile, .address {
-    color: $jet;
-    font-style: italic;
+    color: $oil;
+    font-size: 0.9em;
   }
 }
 
@@ -171,6 +179,55 @@ ul.list-icon-check {
   }
 }
 
+.fix-shadow-box {
+  position:relative;
+  z-index:1;
+}
+
+.call-for-action-panel {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-top: 3px solid $primary-color;
+  padding: 20px 10px 0;
+  margin: 20px auto 10px;
+  h2 {font-size: 1.4em; margin-bottom: 20px;}
+}
+
+blockquote {
+  margin: 2.5em 0 1.5em;
+  padding: 2.5em;
+  position:relative;
+  border-left: none;
+  min-height: 160px;
+
+  cite {
+    color: $primary-color;
+  }
+}
+
+blockquote:before
+{
+  color: $primary-color;
+  content: "\201C";
+  font-size: 5em;
+  position:absolute;
+  left:5px;
+  top: 0.4em;
+  line-height: 0.1em;
+}
+
+blockquote:after
+{
+  color: $primary-color;
+  content: "\201D";
+  font-size: 5em;
+  position:absolute;
+  right:3px;
+  bottom: 0em;
+  line-height: 0.1em;
+}
+
+// MAIN SECTIONS
 .main-content {
   h1 {
     text-align: center;
@@ -178,7 +235,7 @@ ul.list-icon-check {
   }
 
   .main-section {
-    padding: 60px 0;
+    padding: 60px 0 30px;
 
     .intro {
       margin: 25px auto;
@@ -202,7 +259,8 @@ ul.list-icon-check {
 
 .content-box {
   padding: 15px 5px 30px;
-  background: #f8f8f8;
+  background: #e0f2f1;
+  margin-bottom: 10px;
 
   .heading-and-icon {
     overflow: visible;
@@ -239,7 +297,7 @@ ul.list-icon-check {
 
 // SERVICES
 #legal-services {
-  background-color: #f8f8f8;
+  background-color: #f9fbe7;
 
   .th {
     margin-bottom: 20px;
@@ -248,7 +306,7 @@ ul.list-icon-check {
 
 // TESTIMONIALS
 #testimonials {
-  background-color: #F2EEEA;
+  background-color: #f0f4c3;
 }
 
 // CONTACT
@@ -263,7 +321,7 @@ ul.list-icon-check {
 
   h5 {
     padding-top: 20px;
-    color: white;
+    color: $primary-color;
 
     .subheader {
       color: white;
@@ -281,16 +339,19 @@ ul.list-icon-check {
 }
 
 .social-links {
-  i {
-    @include border-radius(25px);
-    height: 36px;
-    width: 36px;
-    line-height: 36px;
-    font-size: 18px;
-    margin: 10px 0;
-    background-color: $primary-color;
-    text-align: center;
-  }
+  margin-top: 20px;
+}
+
+i.round {
+  @include border-radius(25px);
+  height: 36px;
+  width: 36px;
+  line-height: 36px;
+  font-size: 18px;
+  margin: 10px 0;
+  background-color: $primary-color;
+  text-align: center;
+  color: white;
 }
 
 // FOOTER
