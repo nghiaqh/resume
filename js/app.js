@@ -14,4 +14,11 @@ $(document).ready(function(){
     }, 900, 'swing');
 
   });
+
+  $.BgSwitcher.defaultConfig.images = ['images/slide0.jpg', 1, 5];
+
+  $("#header").bgswitcher({
+    // images: ["slide01.jpg", "slide02.jpg", "slide03.jpg", "slide04.jpg"],
+    loop: true
+  });
 });

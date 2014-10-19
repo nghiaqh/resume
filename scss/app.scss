@@ -59,9 +59,10 @@ div.sticky {
   background: #009688 url(../images/TransportShip05.jpg) center center no-repeat;
   background-size: cover;
   border-bottom: 3px solid $primary-color;
+  padding: 20px 0;
 
   .portrait-photo {
-    margin: 0 0 20px 0;
+    margin: 10px 0 20px 0;
     border-radius: 100px;
     border: 6px solid $primary-color;
   }
@@ -71,15 +72,11 @@ div.sticky {
     color: $jet;
     background: rgba(#ffffff, 0.8);
     font-family: $font-family-sans-serif;
-
-    .row {
-      padding: 60px 0 30px 0;
-    }
+    padding: 20px 0;
   }
 
   .name {
     font-size: 2em;
-    letter-spacing: 0.2em;
     text-transform: uppercase;
     margin-bottom: 20px;
   }
@@ -97,9 +94,9 @@ div.sticky {
     color: $oil;
   }
 
-  .company, .email a, .mobile, .address {
+  .company, .email a, .mobile, .phone, .address {
     color: $oil;
-    font-size: 0.9em;
+    font-size: 1em;
   }
 }
 
